@@ -1,0 +1,20 @@
+{
+  "name": "plugin",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scan": "echo \"Called\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/globalroo/plugin.git"
+  },
+  "author": "Andrew Davies <globalroo@hotmail.com> (http://github.com/globalroo)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/globalroo/plugin/issues"
+  },
+  "homepage": "https://github.com/globalroo/plugin#readme"
+}
