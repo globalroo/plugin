@@ -24,9 +24,9 @@ Upon completion, the script will automatically execute `npm run scan` at the lev
 
 ## Features
 
-- Customizable plugin structure generation
-- Predefined file content for quick setup, with easy modification options
-- Automatic execution of `npm run scan` post-creation
+-   Customizable plugin structure generation
+-   Predefined file content for quick setup, with easy modification options
+-   Automatic execution of `npm run scan` post-creation
 
 ## License
 

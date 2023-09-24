@@ -1,11 +1,14 @@
 {
   "name": "@cymru/plugin",
-  "version": "1.0.0",
-  "description": "",
+  "version": "1.0.1",
+  "description": "Add a predefined template structure as a plugin",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "scan": "echo \"Called\""
+  },
+  "bin": {
+    "plugin": ".index.js"
   },
   "repository": {
     "type": "git",
