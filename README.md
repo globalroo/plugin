@@ -1,4 +1,3 @@
-
 # Plugin
 
 Plugin is a Node.js package designed to automate the creation of a plugin with a specific file structure and predefined content. The package is highly customizable, allowing users to define the plugin name and tailor the content to meet their requirements.
@@ -10,7 +9,6 @@ To install Plugin using [npm](https://npmjs.com), run the following command:
 ```sh
 npm install -g cymru@plugin
 ```
-````
 
 ## Usage
 
