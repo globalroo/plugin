@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "scan": "echo \"Called\""
+    "scan": "echo \"Called\"",
+    "postinstall": "chmod +x ./bin/plugin"
   },
   "bin": {
     "plugin": "./index.js"
