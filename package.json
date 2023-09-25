@@ -1,6 +1,6 @@
 {
   "name": "@cymru/plugin",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Add a predefined template structure as a plugin",
   "main": "index.js",
   "scripts": {
