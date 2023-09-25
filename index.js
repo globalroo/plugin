@@ -55,7 +55,7 @@ function createModule(name) {
 
     console.log(`Module ${name} has been added.`)
 
-    const packageJsonDirectory = findPackageJson(rootPath)
+    const packageJsonDirectory = findPackageJson(process.cwd())
 
     if (packageJsonDirectory) {
         exec("npm run scan", { cwd: packageJsonDirectory }, (error, stdout, stderr) => {
