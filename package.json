@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "scan": "echo \"Called\"",
-    "postinstall": "chmod +x ./bin/plugin"
+    "postinstall": "chmod +x ./node_modules/.bin/plugin"
   },
   "bin": {
     "plugin": "./index.js"
