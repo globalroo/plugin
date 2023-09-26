@@ -1,24 +1,24 @@
 {
-  "name": "@cymru/plugin",
-  "version": "1.0.6",
-  "description": "Add a predefined template structure as a plugin",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "scan": "echo \"Called\"",
-    "postinstall": "chmod +x ./index.js"
-  },
-  "bin": {
-    "plugin": "./index.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/globalroo/plugin.git"
-  },
-  "author": "Andrew Davies <globalroo@hotmail.com> (http://github.com/globalroo)",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/globalroo/plugin/issues"
-  },
-  "homepage": "https://github.com/globalroo/plugin#readme"
+    "name": "@cymru/plugin",
+    "version": "1.1.0",
+    "description": "Add a predefined template structure as a plugin",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "scan": "echo \"Called\"",
+        "postinstall": "chmod +x ./index.js"
+    },
+    "bin": {
+        "plugin": "./index.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/globalroo/plugin.git"
+    },
+    "author": "Andrew Davies <globalroo@hotmail.com> (http://github.com/globalroo)",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/globalroo/plugin/issues"
+    },
+    "homepage": "https://github.com/globalroo/plugin#readme"
 }
