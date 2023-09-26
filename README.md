@@ -7,7 +7,7 @@ Plugin is a Node.js package designed to automate the creation of a plugin with a
 To install Plugin using [npm](https://npmjs.com), run the following command:
 
 ```sh
-npm install -g cymru@plugin
+npm install -g @cymru/plugin
 ```
 
 ## Usage
