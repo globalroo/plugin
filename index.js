@@ -9,12 +9,12 @@ const apiTemplate = require(path.join(__dirname, "templates", "apiTemplate"))
 const mochaTemplate = require(path.join(__dirname, "templates", "mochaTemplate"))
 const jestTemplate = require(path.join(__dirname, "templates", "jestTemplate"))
 
-function findPackageJson(startPath) {
+function findGitRoot(startPath) {
     let currentPath = startPath
     while (currentPath !== path.parse(currentPath).root) {
-        const packageJsonPath = path.join(currentPath, "package.json")
-        if (fs.existsSync(packageJsonPath)) {
-            return path.dirname(packageJsonPath)
+        const gitDirPath = path.join(currentPath, ".git")
+        if (fs.existsSync(gitDirPath) && fs.statSync(gitDirPath).isDirectory()) {
+            return currentPath
         }
         currentPath = path.dirname(currentPath)
     }
@@ -88,10 +88,10 @@ function createModule(originalName) {
 
     console.log(`Module ${originalName} has been added.`)
 
-    const packageJsonDirectory = findPackageJson(process.cwd())
-
-    if (packageJsonDirectory) {
-        exec("npm run scan", { cwd: packageJsonDirectory }, (error, stdout, stderr) => {
+    const projectRoot = findGitRoot(process.cwd())
+    console.log("Identified project root as: ", projectRoot)
+    if (projectRoot) {
+        exec("npm run scan", { cwd: projectRoot }, (error, stdout, stderr) => {
             if (error) {
                 console.error(`Error executing npm run scan: ${error}`)
                 return
